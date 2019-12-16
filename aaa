@@ -1,0 +1,9 @@
+import numpy as np
+x = np.array([1,2,3])
+grid = np.array([[9,8,7],
+                 [6,5,4]])
+np.vstack([x,grid])  # axis = 0  np.concatenate([x,grid],axis = 0)
+
+y = np.array([[99],
+              [99]])
+np.hstack([grid,y]) # axis = 1  np.concatenate([grid,y],axis = 1)
